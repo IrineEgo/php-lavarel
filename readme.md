@@ -12,6 +12,10 @@
 8. Выполнить в папке проекта команду: php artisan migrate
 9. Выполнить в папке проекта команду: php artisan db:seed
 
+## Имя и адрес сайта в сети интернет
+
+http://blog.show-complex.ru
+
 ****************************************************************
 
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
