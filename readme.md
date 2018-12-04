@@ -13,8 +13,10 @@
 9. Выполнить в папке проекта команду: php artisan db:seed
 
 ## Имя и адрес проекта в сети интернет
-
 http://blog.show-complex.ru
+
+## Ссылка на Google-документ, где описано как устроена система и нарисована UML-схема базы данных
+https://docs.google.com/document/d/1WvArKDx5B7z6910DmvWuLFRXFRxSg6GFVx5BNxhrUnU
 
 ****************************************************************
 
