@@ -17,7 +17,7 @@
       <td>{{ $loop->iteration }}</td>
       <td>{{ $topic->topic }}</td>
       <td>{{ count($topic->questions) }}</td>
-      <td>{{ count($topic->questions->where('status', 'public')) }}</td>
+      <td>{{ $topic->questions->publicCount() }}</td>
       <td>{{ count($topic->questions->where('status', 'expected')) }}</td>
       <td><a class="btn btn-primary btn-xs" href="{{ route('topic.show', [$topic->id]) }}" role="button">&gt;</a></td>
     </tr>
