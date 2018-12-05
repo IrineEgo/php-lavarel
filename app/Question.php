@@ -28,7 +28,4 @@ class Question extends Model
         return $query->where('status', 'expected');
     }
     
-    public function scopePublicCount($query) {
-        return $query->where('status', 'public')->count();
-    }
 }
