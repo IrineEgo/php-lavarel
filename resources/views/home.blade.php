@@ -2,7 +2,7 @@
 
 @section('content')
   <div class="admin-home">
-  @if ($questions->where('status', 'expected')->count() !== 0)
+  @if ($questions->where('status', 'expected'))
     <h2 class="text-primary">Ожидают ответа</h2>
     <table class="table table-home">
       <tr>
@@ -31,7 +31,7 @@
   @endif
 
   @foreach ($topics as $topic)
-    @if ($topic->questions->count() !== 0)
+    @if ($topic->questions)
       <h2 class="text-primary">
         Тема: <a href="{{ route('topic.show', [$topic->id]) }}">{{ $topic->topic }}</a>
       </h2>  
