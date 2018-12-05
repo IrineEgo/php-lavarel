@@ -4,7 +4,7 @@
   <div class="col-md-3">
     <ul class="nav nav-tabs nav-stacked">
       @foreach ($topics as $topic)
-        @if ($topic->questions->where('status', 'public')->count() !== 0)
+        @if ($topic->questions)
           <li role="presentation"><a href="#{{ $topic->id }}">{{ $topic->topic }}</a></li>
         @endif
       @endforeach
@@ -16,7 +16,7 @@
     <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
       <div class="panel panel-default">
         @foreach ($topics as $topic)
-          @if ($topic->questions->where('status', 'public')->count() !== 0)
+          @if ($topic->questions)
           <div class="panel-heading" id="{{ $topic->id }}">
             <h2 class="text-head">{{ $topic->topic }}</h2>
           </div>
