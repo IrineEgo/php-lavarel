@@ -8,7 +8,7 @@
         'index', 'create', 'store'
     ]]);
     Route::group(['middleware' => 'auth'], function () {
-        Route::resource('user', 'UserController', ['except'=>[
+        Route::resource('user', 'Admin\UserController', ['except'=>[
             'show'
         ]]);
         Route::resource('topic', 'Admin\TopicController', ['except'=>[
